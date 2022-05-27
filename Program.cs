@@ -12,7 +12,7 @@ public class Example
         LinkedList<string> namn = new LinkedList<string>(names);
 
 
-        void Display(LinkedList<string> nm, string test)
+        static void Display(LinkedList<string> nm, string test)
         {
             Console.WriteLine(test);
             foreach (string name in nm)
@@ -23,15 +23,10 @@ public class Example
             Console.WriteLine();
 
             Display(namn, "Finns i List nu:");
-        
-    
-
-
-            while (true)
-             {
 
             Console.WriteLine("Ange + för att lägga till ett namn eller - för att ta bort ett namn");
-            string v = Console.ReadLine();
+            string v;
+            v = Console.ReadLine();
             switch (v)
             {
                 case "+":
@@ -59,6 +54,6 @@ public class Example
             }
         }
 
-    }
-}
+ }
+
  
